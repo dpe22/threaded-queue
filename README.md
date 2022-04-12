@@ -4,7 +4,7 @@ The article "Thread-Safe Synchronized Queues in Python" (see reference URL in pr
 
 For this project, I opted to take a priority queue approach, storing the queued task and priority as a tuple. You can see in the demo screenshot below that the module correctly throws an exception after 1 second if you try to execute a task from an empty queue. One interesting problem I encountered was that the prioritization doesn't work well with multiple threads. You can see in the demo screenshot that when there are two tasks with the same priority level they both execute sequentially on the same thread instead of concurrently on two threads. I'm still trying to figure that out. 
 
-The code prints output to the terminal to provide visual evidence of execution during development, but the print lines can be easily removed for production. 
+priorityQ.py prints output to the terminal to provide visual evidence of execution during development, but the print lines can be easily removed for production. 
 
 ### System Requirements
 Python 3.9
