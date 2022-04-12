@@ -27,7 +27,7 @@ def push_item(value):
         priority_queue.put(value, timeout=1)
         print("Put Item : {}. Queue Size : {}".format(value, priority_queue.qsize()))
     except Exception as e:
-        print("Thread : {}. Error : {}. Failed to add value ({}) to queue. Queue Size : {}".format(threading.current_thread().name, type(e).__name__, value, lifo_queue.qsize()))
+        print("Thread : {}. Error : {}. Failed to add value ({}) to queue. Queue Size : {}".format(threading.current_thread().name, type(e).__name__, value, priority_queue.qsize()))
 
 if __name__ == "__main__":
 
