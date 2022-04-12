@@ -13,7 +13,7 @@ def pop_nitems(n):
     for i in range(n):
         time.sleep(2)
         item = priority_queue.get()
-        print("Thread : {}. Retrieved & Proccessed Item : {}".format(threading.current_thread().name, item))
+        print("Thread : {}. Retrieved & Processed Task : {}".format(threading.current_thread().name, item))
         #print("Thread {}. Processed Item : {}".format(threading.current_thread().name, item))
         priority_queue.task_done()
 
@@ -31,4 +31,4 @@ if __name__ == "__main__":
 
     priority_queue.join()
 
-    print("\nAll items in queue completed. Exited from Main Thread\n")
+    print("\nAll tasks in queue completed. Exited from Main Thread\n")
