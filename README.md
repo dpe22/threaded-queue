@@ -6,8 +6,8 @@ For this project, I opted to take a priority queue approach, storing the queued 
 
 priorityQ.py prints output to the terminal to provide visual evidence of execution during development, but the print lines can be easily removed for production. 
 
-### System Requirements
+## System Requirements
 Python 3.9
 
-### Demo
+## Demo
 ![image](https://user-images.githubusercontent.com/74585697/162864262-6d0d8f20-b3f6-40ba-a579-9d4049de8b27.png)
